@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacto Histórico - Sede Cartago, Valle del Cauca</title>
 
-    <!-- 1. Enlace real de producción a Tailwind CSS (Resuelve el desorden de columnas y menús) -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- 1. Enlace CDN Oficial a la Hoja de Estilos de Tailwind v3 (Acomoda columnas, grillas y menús al instante) -->
+    <link rel="stylesheet" href="https://jsdelivr.net">
     
-    <!-- 2. Recursos de Fuentes e Íconos Oficiales -->
+    <!-- 2. Recursos de Fuentes e Íconos -->
     <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="https://cloudflare.com">
-    
+
+    <!-- 3. Inyección Manual de Estilos Especiales e Identidad del Pacto Histórico -->
     <style>
         body {
             font-family: 'Inter', sans-serif !important;
         }
 
-        /* Degradados Corporativos Oficiales */
+        /* Degradados Institucionales Oficiales */
         .gradient-ph {
             background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 40%, #F3B229 100%) !important;
         }
@@ -39,7 +40,7 @@
             -webkit-backdrop-filter: blur(10px) !important;
         }
 
-        /* Mapeo y Soporte para los Colores Personalizados en el HTML */
+        /* Soporte para los nombres de colores personalizados que dejó el maquetador anterior */
         .bg-phDark { background-color: #1F1E2E !important; }
         .bg-phPink { background-color: #E83E8C !important; }
         .bg-phYellow { background-color: #F3B229 !important; }
@@ -55,6 +56,7 @@
         .border-phPurple { border-color: #7B2CBF !important; }
     </style>
 </head>
+
 <body class="font-sans bg-slate-50 text-slate-800 antialiased">
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all border-b border-slate-100">
         <div class="h-1.5 w-full gradient-ph"></div>
