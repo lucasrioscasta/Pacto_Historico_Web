@@ -1,0 +1,32 @@
+/* REGLAS ESENCIALES DE MAQUETACIÓN */
+.hidden { display: none !important; }
+.block { display: block !important; }
+.flex { display: flex !important; }
+.grid { display: grid !important; }
+
+/* Contenedores y Alineación Básica */
+.container { width: 100% !important; max-width: 1280px !important; margin-left: auto !important; margin-right: auto !important; padding-left: 1rem !important; padding-right: 1rem !important; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.justify-between { justify-content: space-between !important; }
+.items-center { align-items: center !important; }
+
+/* Diseño Responsivo para el Menú de Computadoras y Celulares */
+@media (min-width: 1280px) {
+    .xl\:flex { display: flex !important; }
+    .xl\:hidden { display: none !important; }
+}
+
+/* Soporte para los colores personalizados que dejó el maquetador */
+.bg-phDark { background-color: #1F1E2E !important; }
+.bg-phPink { background-color: #E83E8C !important; }
+.bg-phYellow { background-color: #F3B229 !important; }
+.bg-phPurple { background-color: #7B2CBF !important; }
+.bg-phBlue { background-color: #0077B6 !important; }
+
+.text-phYellow { color: #F3B229 !important; }
+.text-phPink { color: #E83E8C !important; }
+.text-phPurple { color: #7B2CBF !important; }
+.text-phBlue { color: #0077B6 !important; }
+.text-phGreen { color: #2A9D8F !important; }
+
+.border-phPurple { border-color: #7B2CBF !important; }
