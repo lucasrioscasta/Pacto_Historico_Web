@@ -4,53 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacto Histórico - Sede Cartago, Valle del Cauca</title>
-    <link rel="stylesheet" href="css/tailwind.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        phYellow: '#F3B229',
+                        phPink: '#E83E8C',
+                        phPurple: '#7B2CBF',
+                        phBlue: '#0077B6',
+                        phGreen: '#2A9D8F',
+                        phDark: '#1E1B2E',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body {
-            font-family: 'Inter', sans-serif !important;
-        }
-
-        /* Degradados Institucionales Oficiales */
         .gradient-ph {
-            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 40%, #F3B229 100%) !important;
+            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 40%, #F3B229 100%);
         }
-        
         .gradient-ph-text {
-            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 50%, #0077B6 100%) !important;
-            -webkit-background-clip: text !important;
-            background-clip: text !important;
-            -webkit-text-fill-color: transparent !important;
+            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 50%, #0077B6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
         .ph-border-multicolor {
-            border-image: linear-gradient(to right, #7B2CBF, #E83E8C, #F3B229, #2A9D8F) 1 !important;
+            border-image: linear-gradient(to right, #7B2CBF, #E83E8C, #F3B229, #2A9D8F) 1;
         }
-
         .glass-card {
-            background: rgba(255, 255, 255, 0.95) !important;
-            backdrop-filter: blur(10px) !important;
-            -webkit-backdrop-filter: blur(10px) !important;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
         }
-
-        /* Soporte para los nombres de colores personalizados que dejó el maquetador anterior */
-        .bg-phDark { background-color: #1F1E2E !important; }
-        .bg-phPink { background-color: #E83E8C !important; }
-        .bg-phYellow { background-color: #F3B229 !important; }
-        .bg-phPurple { background-color: #7B2CBF !important; }
-        .bg-phBlue { background-color: #0077B6 !important; }
-        
-        .text-phYellow { color: #F3B229 !important; }
-        .text-phPink { color: #E83E8C !important; }
-        .text-phPurple { color: #7B2CBF !important; }
-        .text-phBlue { color: #0077B6 !important; }
-        .text-phGreen { color: #2A9D8F !important; }
-        
-        .border-phPurple { border-color: #7B2CBF !important; }
     </style>
 </head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-phPink selection:text-white">
 
-<body class="font-sans bg-slate-50 text-slate-800 antialiased">
+    <!-- HEADER & NAVEGACIÓN -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all border-b border-slate-100">
+        <!-- Top bar de colores institucional -->
         <div class="h-1.5 w-full gradient-ph"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
