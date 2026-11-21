@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacto Histórico - Sede Cartago, Valle del Cauca</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        phYellow: '#F3B229',
+                        phPink: '#E83E8C',
+                        phPurple: '#7B2CBF',
+                        phBlue: '#0077B6',
+                        phGreen: '#2A9D8F',
+                        phDark: '#1E1B2E',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-ph {
+            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 40%, #F3B229 100%);
+        }
+        .gradient-ph-text {
+            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 50%, #0077B6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .ph-border-multicolor {
+            border-image: linear-gradient(to right, #7B2CBF, #E83E8C, #F3B229, #2A9D8F) 1;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-phPink selection:text-white">
+
+    <!-- HEADER & NAVEGACIÓN -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all border-b border-slate-100">
+        <!-- Top bar de colores institucional -->
+        <div class="h-1.5 w-full gradient-ph"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#inicio" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl gradient-ph flex items-center justify-center text-white font-extrabold text-xl shadow-md group-hover:scale-105 transition-transform">
+                        PH
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-black tracking-tight text-slate-900 group-hover:text-phPurple transition-colors leading-none">
+                            PACTO HISTÓRICO
+                        </span>
+                        <span class="text-xs font-bold tracking-widest text-phPink uppercase mt-1">
+                            Sede Cartago · Valle
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Nav links Desktop -->
+                <nav class="hidden xl:flex items-center space-x-6 text-sm font-semibold text-slate-700">
+                    <a href="#inicio" class="hover:text-phPurple transition-colors py-1">Inicio</a>
+                    <a href="#nosotros" class="hover:text-phPurple transition-colors py-1">Nosotros</a>
+                    <a href="#propuestas" class="hover:text-phPurple transition-colors py-1">Propuestas</a>
+                    <a href="#agenda" class="hover:text-phPurple transition-colors py-1">Noticias y Eventos</a>
+                    <a href="#galeria" class="hover:text-phPurple transition-colors py-1">Galería</a>
+                    <a href="#faq" class="hover:text-phPurple transition-colors py-1">Transparencia</a>
+                    <a href="#contacto" class="hover:text-phPurple transition-colors py-1">Contacto</a>
+                </nav>
+
+                <!-- CTA Button Desktop -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="#voluntariado" class="px-5 py-2.5 rounded-full font-bold text-white bg-gradient-to-r from-phPurple via-phPink to-phYellow shadow-md hover:shadow-lg hover:opacity-95 transition-all transform hover:-translate-y-0.5 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-hand-fist text-xs"></i>
+                        <span>¡Únete al Movimiento!</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="xl:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#inicio" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50 hover:text-phPurple">Inicio</a>
+            <a href="#nosotros" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50 hover:text-phPurple">Nosotros</a>
+            <a href="#propuestas" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50 hover:text-phPurple">Propuestas</a>
+            <a href="#agenda" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50 hover:text-phPurple">Noticias y Eventos</a>
+            <a href="#galeria" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50 hover:text-phPurple">Galería</a>
+            <a href="#faq" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50 hover:text-phPurple">Transparencia & FAQ</a>
+            <a href="#contacto" class="block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50 hover:text-phPurple">Contacto</a>
+            <div class="pt-2">
+                <a href="#voluntariado" class="block w-full text-center px-5 py-3 rounded-xl font-bold text-white gradient-ph shadow-md">
+                    ¡Únete al Movimiento!
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative overflow-hidden bg-slate-900 text-white pt-12 pb-24 lg:pt-20 lg:pb-32">
+        <!-- Elementos de Fondo Abstractos -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-phPurple filter blur-3xl"></div>
+            <div class="absolute top-1/2 left-10 w-80 h-80 rounded-full bg-phPink filter blur-3xl"></div>
+            <div class="absolute -bottom-20 right-1/4 w-96 h-96 rounded-full bg-phYellow filter blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-phYellow text-xs sm:text-sm font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-phGreen animate-pulse"></span>
+                        Sede Comunitaria y Política · Cartago, Valle
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white">
+                        Construyendo el <span class="bg-gradient-to-r from-phYellow via-phPink to-phBlue bg-clip-text text-transparent">Cambio Social</span> desde Cartago
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Un espacio de convergencia democrática, poder popular y organización comunitaria para el desarrollo integral del Sol de la Villa Vieja y el Norte del Valle.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#voluntariado" class="px-8 py-4 rounded-xl font-bold text-white gradient-ph shadow-xl hover:shadow-phPink/20 hover:scale-[1.02] transition-all text-center flex items-center justify-center gap-2">
+                            <span>Súmate como Voluntario</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#propuestas" class="px-8 py-4 rounded-xl font-bold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all text-center flex items-center justify-center gap-2">
+                            <span>Conoce nuestras propuestas</span>
+                        </a>
+                    </div>
+
+                    <!-- Métricas Rápidas -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800 mt-8">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-black text-phYellow">12+</p>
+                            <p class="text-xs sm:text-sm text-slate-400 font-medium">Barrios e Comunas Impactadas</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-black text-phPink">1.5K+</p>
+                            <p class="text-xs sm:text-sm text-slate-400 font-medium">Ciudadanos Vinculados</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-black text-phGreen">100%</p>
+                            <p class="text-xs sm:text-sm text-slate-400 font-medium">Compromiso Ciudadano</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Interactiva Lateral en Hero -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-800/90 border border-slate-700 p-6 sm:p-8 rounded-3xl shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 bg-phPink text-white font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+                            Directo en la Sede
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-bullhorn text-phYellow"></i>
+                            Punto de Atención Ciudadana
+                        </h3>
+                        <p class="text-slate-300 text-sm mb-6">
+                            Visita nuestra sede física en Cartago para asesorías comunitarias, diálogos populares y participación activa.
+                        </p>
+
+                        <div class="space-y-4 text-sm text-slate-300">
+                            <div class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-700/60">
+                                <i class="fa-solid fa-location-dot text-phPink text-lg mt-0.5"></i>
+                                <div>
+                                    <strong class="block text-white">Ubicación Cartago</strong>
+                                    <span>Carrera 4 # 11-35, Centro de Cartago, Valle</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-700/60">
+                                <i class="fa-solid fa-clock text-phYellow text-lg mt-0.5"></i>
+                                <div>
+                                    <strong class="block text-white">Horario Abierto</strong>
+                                    <span>Lunes a Viernes: 8:00 AM - 6:00 PM | Sábados: 9:00 AM - 1:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-700/60">
+                                <i class="fa-brands fa-whatsapp text-phGreen text-lg mt-0.5"></i>
+                                <div>
+                                    <strong class="block text-white">Línea Directa Cartago</strong>
+                                    <span>+57 (315) 890-4321</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#contacto" class="mt-6 w-full py-3 block text-center bg-phPurple/30 hover:bg-phPurple/50 text-phYellow font-bold rounded-xl border border-phPurple/50 transition-colors text-sm">
+                            Ver Mapa y Medios de Contacto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS / PILARES -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-phPurple font-bold uppercase tracking-wider text-sm">Nuestra Identidad</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+                    Trabajando por la dignidad y el desarrollo de Cartago
+                </h2>
+                <div class="w-24 h-1.5 gradient-ph mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    La sede del Pacto Histórico en Cartago se concibe como una casa abierta a líderes sociales, jóvenes, mujeres, trabajadores y campesinos que buscan articular alternativas de progreso equitativo para nuestra región.
+                </p>
+            </div>
+
+            <!-- Grid de Pilares -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Pilar 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-phPurple/10 text-phPurple flex items-center justify-center text-2xl font-bold mb-5 group-hover:bg-phPurple group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Justicia Social</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Defendemos los derechos fundamentales, el acceso equitativo a servicios públicos de calidad y la reducción de las brechas de desigualdad en los barrios de Cartago.
+                    </p>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-phPink/10 text-phPink flex items-center justify-center text-2xl font-bold mb-5 group-hover:bg-phPink group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Desarrollo Regional</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Impulsamos el dinamismo económico, el comercio local, la agroindustria sostenible y el turismo cultural articulados con el Norte del Valle del Cauca.
+                    </p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-phYellow/20 text-slate-800 flex items-center justify-center text-2xl font-bold mb-5 group-hover:bg-phYellow transition-colors">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Poder Popular</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Fomentamos la participación viva de las Juntas de Acción Comunal, sindicatos, asociaciones juveniles y colectivos comunitarios cartagüeños.
+                    </p>
+                </div>
+
+                <!-- Pilar 4 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-phGreen/10 text-phGreen flex items-center justify-center text-2xl font-bold mb-5 group-hover:bg-phGreen group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Transparencia</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Promovemos la veeduría ciudadana sobre la inversión pública local, combatiendo la corrupción y fortaleciendo las instituciones del municipio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROPUESTAS Y PROYECTOS -->
+    <section id="propuestas" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-phPink font-bold uppercase tracking-wider text-sm">Agenda Territorial</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+                    Ejes Prioritarios para el Municipio de Cartago
+                </h2>
+                <p class="text-slate-600 mt-3">
+                    Descubre las propuestas construidas de manera colaborativa con la comunidad para transformar a Cartago en un municipio próspero y seguro.
+                </p>
+            </div>
+
+            <!-- Tabs de Propuestas -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10" id="propuestas-tabs">
+                <button onclick="switchTab('economia')" id="tab-economia" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-phPurple text-white shadow-md">
+                    <i class="fa-solid fa-store mr-2"></i>Desarrollo Económico
+                </button>
+                <button onclick="switchTab('juventud')" id="tab-juventud" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200">
+                    <i class="fa-solid fa-graduation-cap mr-2"></i>Juventud & Educación
+                </button>
+                <button onclick="switchTab('ambiente')" id="tab-ambiente" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200">
+                    <i class="fa-solid fa-leaf mr-2"></i>Medio Ambiente & Campo
+                </button>
+                <button onclick="switchTab('inclusion')" id="tab-inclusion" class="tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200">
+                    <i class="fa-solid fa-hand-holding-heart mr-2"></i>Inclusión Social & Salud
+                </button>
+            </div>
+
+            <!-- Contenido de las Pestañas -->
+            <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-lg border border-slate-200/80">
+                
+                <!-- Contenido Economía -->
+                <div id="content-economia" class="tab-content grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <span class="bg-phPurple/10 text-phPurple text-xs font-bold px-3 py-1 rounded-full uppercase">Eje 01 · Economía Local</span>
+                        <h3 class="text-2xl font-bold text-slate-900">Revitalización del Comercio, Bordados y Microempresa Cartagüeña</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Cartago es reconocida por la riqueza artesanal del bordado y su vibrante actividad comercial. Impulsamos incentivos para pequeños emprendedores, crédito accesible y redes de distribución turística y regional.
+                        </p>
+                        <ul class="space-y-2 text-slate-700 text-sm">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Creación de la Escuela de Emprendimiento y Bordado Tradicional.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Fortalecimiento de ferias gastronómicas y culturales permanentes.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Apoyo a tenderos, pequeños comerciantes y plazas de mercado.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-900 rounded-2xl p-8 text-white relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-phPurple rounded-full blur-2xl opacity-40"></div>
+                        <h4 class="text-xl font-bold mb-4 text-phYellow">Propuesta Destacada</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            "Fondo de Capital Semilla Comunitario Cartago": Asesoría integral y financiamiento blando a jóvenes y mujeres cabeza de hogar para la creación de microempresas sostenibles.
+                        </p>
+                        <div class="inline-block bg-white/10 px-4 py-2 rounded-xl text-xs font-semibold">
+                            Co-creado en Asambleas Comunitarias de Cartago
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido Juventud -->
+                <div id="content-juventud" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <span class="bg-phPink/10 text-phPink text-xs font-bold px-3 py-1 rounded-full uppercase">Eje 02 · Juventud & Formación</span>
+                        <h3 class="text-2xl font-bold text-slate-900">Oportunidades de Educación Superior y Empleo Joven</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Garantizar que ningún joven cartagüeño tenga que emigrar por falta de oportunidades de formación y empleo digno.
+                        </p>
+                        <ul class="space-y-2 text-slate-700 text-sm">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Gestión para la ampliación de cupos públicos universitarios en la ciudad.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Centros comunitarios tecnológicos de formación técnica y digital en las comunas.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Programa de incentivos para el primer empleo en empresas del Norte del Valle.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-900 rounded-2xl p-8 text-white relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-phPink rounded-full blur-2xl opacity-40"></div>
+                        <h4 class="text-xl font-bold mb-4 text-phYellow">Casa de las Juventudes Cartago</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Acondicionamiento de espacios públicos para expresiones artísticas, innovación digital, deporte extremo y salas de ensayo para talentos locales.
+                        </p>
+                        <div class="inline-block bg-white/10 px-4 py-2 rounded-xl text-xs font-semibold">
+                            Propuesta Juvenil Activa
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido Ambiente -->
+                <div id="content-ambiente" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <span class="bg-phGreen/10 text-phGreen text-xs font-bold px-3 py-1 rounded-full uppercase">Eje 03 · Sostenibilidad</span>
+                        <h3 class="text-2xl font-bold text-slate-900">Protección del Río La Vieja, Humedales y Zona Rural</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Cartago es puerta de entrada al Paisaje Cultural Cafetero. Protegemos el patrimonio natural, las fuentes hídricas y apoyamos a los campesinos del corregimiento de Santa Ana y veredas.
+                        </p>
+                        <ul class="space-y-2 text-slate-700 text-sm">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Plan integral de saneamiento y preservación de la cuenca del Río La Vieja.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Compras públicas locales a pequeños productores agropecuarios de Cartago.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Programas de reciclaje en la fuente con recolección digna para recicladores.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-900 rounded-2xl p-8 text-white relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-phGreen rounded-full blur-2xl opacity-40"></div>
+                        <h4 class="text-xl font-bold mb-4 text-phYellow">Madrinas y Padrinos del Río</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Voluntariado ecológico para reforestación de orillas, monitoreo participativo del agua y proyectos ecoturísticos comunitarios.
+                        </p>
+                        <div class="inline-block bg-white/10 px-4 py-2 rounded-xl text-xs font-semibold">
+                            Ecológico y Comunitario
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido Inclusión -->
+                <div id="content-inclusion" class="tab-content hidden grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <span class="bg-phBlue/10 text-phBlue text-xs font-bold px-3 py-1 rounded-full uppercase">Eje 04 · Bienestar Comunitario</span>
+                        <h3 class="text-2xl font-bold text-slate-900">Salud Digna, Equidad de Género y Adulto Mayor</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Fortalecer el sistema de salud preventiva, dignificar el cuidado de nuestros abuelos y abuelas, y promover entornos libres de violencias de género en Cartago.
+                        </p>
+                        <ul class="space-y-2 text-slate-700 text-sm">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Brigadas comunitarias de salud preventiva en barrios periféricos.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Red Violeta Cartago: Apoyo jurídico y psicológico a mujeres.
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-phGreen"></i>
+                                Centros del Día repotenciados para personas de la tercera edad.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-900 rounded-2xl p-8 text-white relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-phBlue rounded-full blur-2xl opacity-40"></div>
+                        <h4 class="text-xl font-bold mb-4 text-phYellow">Salud al Barrio Cartago</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Atención directa y descentralizada para la prevención de enfermedades y promoción de hábitos saludables con profesionales voluntarios de la sede.
+                        </p>
+                        <div class="inline-block bg-white/10 px-4 py-2 rounded-xl text-xs font-semibold">
+                            Enfoque Social Participativo
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- AGENDA DE EVENTOS Y NOTICIAS -->
+    <section id="agenda" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-phPurple font-bold uppercase tracking-wider text-sm">Actividades en la Sede</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+                        Agenda Comunitarias y Noticias Local
+                    </h2>
+                </div>
+                <!-- Filtros de Eventos -->
+                <div class="flex gap-2 mt-4 md:mt-0 overflow-x-auto pb-2">
+                    <button onclick="filterEvents('all')" class="event-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-slate-900 text-white">Todos</button>
+                    <button onclick="filterEvents('asamblea')" class="event-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">Asambleas</button>
+                    <button onclick="filterEvents('formacion')" class="event-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">Formación</button>
+                    <button onclick="filterEvents('comunidad')" class="event-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">Comunitarios</button>
+                </div>
+            </div>
+
+            <!-- Grid de Tarjetas de Eventos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Evento 1 -->
+                <div class="event-card asamblea bg-slate-50 border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-phPurple/10 text-phPurple text-xs font-bold px-3 py-1 rounded-full uppercase">Asamblea Popular</span>
+                            <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar mr-1"></i>Sábado 17 Oct</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Encuentro de Veeduría del Agua y Servicios Públicos</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Reunión participativa para revisar la situación de servicios públicos e infraestructura en los barrios del sur de Cartago.
+                        </p>
+                    </div>
+                    <div class="bg-white px-6 py-4 border-t border-slate-100 flex justify-between items-center text-xs font-medium text-slate-600">
+                        <span><i class="fa-solid fa-clock text-phPurple mr-1"></i> 3:00 PM - 5:30 PM</span>
+                        <span><i class="fa-solid fa-location-dot text-phPink mr-1"></i> Sede Cartago</span>
+                    </div>
+                </div>
+
+                <!-- Evento 2 -->
+                <div class="event-card formacion bg-slate-50 border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-phPink/10 text-phPink text-xs font-bold px-3 py-1 rounded-full uppercase">Formación Política</span>
+                            <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar mr-1"></i>Miércoles 21 Oct</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Taller de Liderazgo Comunitario y Elaboración de Proyectos</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Capacitación gratuita orientada a líderes comunales para la gestión efectiva de proyectos sociales en la administración pública.
+                        </p>
+                    </div>
+                    <div class="bg-white px-6 py-4 border-t border-slate-100 flex justify-between items-center text-xs font-medium text-slate-600">
+                        <span><i class="fa-solid fa-clock text-phPurple mr-1"></i> 6:30 PM - 8:00 PM</span>
+                        <span><i class="fa-solid fa-location-dot text-phPink mr-1"></i> Auditorio Sede</span>
+                    </div>
+                </div>
+
+                <!-- Evento 3 -->
+                <div class="event-card comunidad bg-slate-50 border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-phGreen/10 text-phGreen text-xs font-bold px-3 py-1 rounded-full uppercase">Jornada Comunitaria</span>
+                            <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar mr-1"></i>Domingo 25 Oct</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Jornada de Embellecimiento Urbano y Reciclaje</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Actividad de siembra, pintura de murales comunitarios y punto verde de recolección en la Comuna 7 de Cartago.
+                        </p>
+                    </div>
+                    <div class="bg-white px-6 py-4 border-t border-slate-100 flex justify-between items-center text-xs font-medium text-slate-600">
+                        <span><i class="fa-solid fa-clock text-phPurple mr-1"></i> 8:00 AM - 1:00 PM</span>
+                        <span><i class="fa-solid fa-location-dot text-phPink mr-1"></i> Parque El Prado</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MÓDULO INTERACTIVO ÚNETE / VOLUNTARIADO -->
+    <section id="voluntariado" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="bg-phYellow text-slate-900 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">
+                        Involúcrate Hoy
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Tu voz y tus manos son esenciales para el cambio en Cartago
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-base">
+                        Súmate al equipo de la sede Cartago como voluntario, testigo electoral, gestor cultural o líder de barrio. La transformación social la construimos colectivamente.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-phPurple/30 text-phYellow flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Comunicaciones y Difusión</h4>
+                                <p class="text-slate-400 text-sm">Creación de contenidos, redes sociales y vocería territorial.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-phPink/30 text-phPink flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-clipboard-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Organización y Logística</h4>
+                                <p class="text-slate-400 text-sm">Apoyo en asambleas, eventos de sede y brigadas sociales.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-phGreen/30 text-phGreen flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Formación y Veeduría</h4>
+                                <p class="text-slate-400 text-sm">Talleres comunitarios, defensa del voto y transparencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-800/90 border border-slate-700 p-8 sm:p-10 rounded-3xl shadow-2xl relative">
+                        <h3 class="text-2xl font-bold text-white mb-6">Formulario de Inscripción de Voluntarios</h3>
+                        
+                        <form id="volunteer-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Nombre Completo *</label>
+                                    <input type="text" id="nombre" required placeholder="Ej. Maria Alejandra Ruiz" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-phPink text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Cédula de Ciudadanía *</label>
+                                    <input type="text" id="cedula" required placeholder="Ej. 1113... " class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-phPink text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Barrio / Comuna de Cartago *</label>
+                                    <input type="text" id="barrio" required placeholder="Ej. Barrio El Prado, Comuna 3" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-phPink text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Teléfono / WhatsApp *</label>
+                                    <input type="tel" id="telefono" required placeholder="Ej. 315 123 4567" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-phPink text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Correo Electrónico *</label>
+                                    <input type="email" id="correo" required placeholder="ejemplo@correo.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-phPink text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Área de Interés Principal *</label>
+                                    <select id="area" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white focus:outline-none focus:border-phPink text-sm">
+                                        <option value="" disabled selected>Selecciona una opción</option>
+                                        <option value="comunicacion">Comunicaciones y Redes</option>
+                                        <option value="logistica">Logística y Eventos</option>
+                                        <option value="formacion">Formación Política y Talleres</option>
+                                        <option value="testigo">Testigo Electoral / Veeduría</option>
+                                        <option value="trabajo_barrial">Organización Barrial</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">¿Cómo te gustaría aportar? (Opcional)</label>
+                                <textarea id="mensaje" rows="3" placeholder="Cuéntanos brevemente sobre tus habilidades o expectativas..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-phPink text-sm"></textarea>
+                            </div>
+
+                            <div class="flex items-start gap-2 pt-2">
+                                <input type="checkbox" id="acepto" required class="mt-1 rounded border-slate-700 text-phPink focus:ring-phPink">
+                                <label for="acepto" class="text-xs text-slate-400">
+                                    Acepto el tratamiento de datos personales para la coordinación de actividades voluntarias de la sede Cartago del Pacto Histórico.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl font-extrabold text-white gradient-ph shadow-xl hover:opacity-95 transition-all text-base mt-4">
+                                <i class="fa-solid fa-paper-plane mr-2"></i>Enviar mi Inscripción
+                            </button>
+                        </form>
+
+                        <!-- Mensaje de Éxito Interactivo -->
+                        <div id="form-success" class="hidden text-center py-10 space-y-4">
+                            <div class="w-16 h-16 rounded-full bg-phGreen/20 text-phGreen flex items-center justify-center text-3xl mx-auto">
+                                <i class="fa-solid fa-check-circle"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold text-white">¡Inscripción Recibida con Éxito!</h4>
+                            <p class="text-slate-300 text-sm max-w-md mx-auto">
+                                Gracias por registrarte. El equipo de enlace de la sede de Cartago se comunicará contigo vía WhatsApp o correo electrónico muy pronto.
+                            </p>
+                            <button onclick="resetForm()" class="px-6 py-2.5 rounded-xl bg-slate-700 text-white text-xs font-bold hover:bg-slate-600">
+                                Registrar a otra persona
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA COMUNITARIA -->
+    <section id="galeria" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-phBlue font-bold uppercase tracking-wider text-sm">La Sede en Acción</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+                    Nuestra Presencia en Cartago
+                </h2>
+                <p class="text-slate-600 mt-3">
+                    Imágenes de asambleas, recorridos por comunas, talleres juveniles y encuentros comunitarios.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Foto 1 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-md bg-slate-800 h-64">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80" alt="Asamblea Comunitaria" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent p-6 flex flex-col justify-end">
+                        <span class="text-phYellow text-xs font-bold uppercase">Asamblea Comuna 4</span>
+                        <h4 class="text-white font-bold text-base mt-1">Diálogo Abierto sobre Proyectos Locales</h4>
+                    </div>
+                </div>
+
+                <!-- Foto 2 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-md bg-slate-800 h-64">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" alt="Talleres de Formación" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent p-6 flex flex-col justify-end">
+                        <span class="text-phPink text-xs font-bold uppercase">Sede Central Cartago</span>
+                        <h4 class="text-white font-bold text-base mt-1">Taller de Liderazgo Femenino y Formación</h4>
+                    </div>
+                </div>
+
+                <!-- Foto 3 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-md bg-slate-800 h-64">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=800&q=80" alt="Jornada Voluntaria" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent p-6 flex flex-col justify-end">
+                        <span class="text-phGreen text-xs font-bold uppercase">Zona Rural · Santa Ana</span>
+                        <h4 class="text-white font-bold text-base mt-1">Encuentro con Productores Agrícolas</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSPARENCIA Y PREGUNTAS FRECUENTES (FAQ) -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-phPurple font-bold uppercase tracking-wider text-sm">Transparencia & Claridad</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+                    Preguntas Frecuentes
+                </h2>
+                <p class="text-slate-600 mt-2">
+                    Respuestas a las dudas principales sobre el funcionamiento de la sede en Cartago y cómo participar.
+                </p>
+            </div>
+
+            <div class="space-y-4" id="accordion-faq">
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                        <span>¿Cualquier ciudadano de Cartago puede asistir a las reuniones de la sede?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-phPurple transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-answer-1" class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        ¡Por supuesto! La sede del Pacto Histórico en Cartago es un espacio abierto para toda la ciudadanía sin distinción. Cualquier persona interesada en aportar ideas o proponer soluciones para su barrio es bienvenida en nuestros horarios de atención y asambleas.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                        <span>¿Tiene algún costo inscribirse o participar en las actividades?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-phPurple transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-answer-2" class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        No. Todas las capacitaciones, talleres, asambleas y actividades organizadas por la sede son totalmente gratuitas y de acceso público para la comunidad cartagüeña.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                        <span>¿Cómo puedo inscribirme como testigo electoral o jurado veedor?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-phPurple transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-answer-3" class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        Puedes registrarte directamente mediante el módulo de voluntariado en esta página web seleccionando la opción "Testigo Electoral / Veeduría", o acercarte personalmente a la sede en el horario regular.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+                        <span>¿Cómo se articulan las propuestas locales con el nivel departamental y nacional?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-phPurple transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-answer-4" class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100 bg-slate-50/50">
+                        Mantenemos constante comunicación con las bancadas, enlaces departamentales del Valle del Cauca y ministerios para canalizar las necesidades prioritarias del municipio de Cartago e impulsarlas en la agenda pública.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO Y UBICACIÓN -->
+    <section id="contacto" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-phPink font-bold uppercase tracking-wider text-sm">Contacto Directo</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">
+                    Visítanos o Escríbenos en Cartago
+                </h2>
+                <p class="text-slate-600 mt-2">
+                    Nuestras puertas están abiertas. Puedes contactarnos por WhatsApp, llamada o visitarnos en nuestra sede física.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Info de Contacto -->
+                <div class="lg:col-span-5 space-y-6 bg-white p-8 rounded-3xl shadow-md border border-slate-200">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-3">
+                        Información Institucional
+                    </h3>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-phPurple/10 text-phPurple flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Dirección de la Sede</h4>
+                            <p class="text-slate-600 text-sm mt-0.5">Carrera 4 # 11-35, Centro</p>
+                            <span class="text-xs text-slate-400">Cartago, Valle del Cauca, Colombia</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-phGreen/10 text-phGreen flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">WhatsApp & Teléfono</h4>
+                            <p class="text-slate-600 text-sm mt-0.5">+57 315 890 4321</p>
+                            <span class="text-xs text-slate-400">Atención rápida y canal comunitarios</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-phBlue/10 text-phBlue flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Correo Oficial</h4>
+                            <p class="text-slate-600 text-sm mt-0.5">cartago@pactohistorico.co</p>
+                            <span class="text-xs text-slate-400">Para correspondencia y comunicados</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-phYellow/20 text-slate-800 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Horarios de Atención</h4>
+                            <p class="text-slate-600 text-sm mt-0.5">Lunes a Viernes: 8:00 AM – 6:00 PM</p>
+                            <p class="text-slate-600 text-sm">Sábados: 9:00 AM – 1:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociales Directas -->
+                    <div class="pt-4 border-t border-slate-100">
+                        <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">Síguenos en Redes Sociales</h4>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-phPurple hover:text-white text-slate-700 flex items-center justify-center transition-colors">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-phPink hover:text-white text-slate-700 flex items-center justify-center transition-colors">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-700 flex items-center justify-center transition-colors">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-phGreen hover:text-white text-slate-700 flex items-center justify-center transition-colors">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Representación de Mapa de Cartago -->
+                <div class="lg:col-span-7 bg-white p-4 rounded-3xl shadow-md border border-slate-200">
+                    <div class="relative w-full h-[420px] rounded-2xl overflow-hidden bg-slate-200 flex items-center justify-center">
+                        <!-- Mapa iframe con fallback visual -->
+                        <iframe 
+                            title="Ubicación Sede Pacto Histórico Cartago"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.284247514781!2d-75.91850000000001!3d4.7471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38810000000001%3A0x0!2zNMKwNDQnNDkuNiJOIDc1wrA1NScwNi42Ilc!5e0!3m2!1ses!2sco!4v1650000000000!5m2!1ses!2sco" 
+                            class="w-full h-full border-0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-white pt-16 pb-12 border-t-4 border-phPurple">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Columna 1: Branding -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg gradient-ph flex items-center justify-center text-white font-extrabold text-lg">
+                            PH
+                        </div>
+                        <span class="text-lg font-black tracking-tight text-white">PACTO HISTÓRICO</span>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Sede oficial en Cartago, Valle del Cauca. Construyendo el cambio social, la equidad territorial y el poder popular en el Norte del Valle.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Navegación Rápida -->
+                <div>
+                    <h4 class="text-sm font-bold text-phYellow uppercase tracking-wider mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="#nosotros" class="hover:text-white transition-colors">Misión y Pilares</a></li>
+                        <li><a href="#propuestas" class="hover:text-white transition-colors">Propuestas por Cartago</a></li>
+                        <li><a href="#agenda" class="hover:text-white transition-colors">Próximos Eventos</a></li>
+                        <li><a href="#voluntariado" class="hover:text-white transition-colors">Únete como Voluntario</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Municipios Vecinos -->
+                <div>
+                    <h4 class="text-sm font-bold text-phPink uppercase tracking-wider mb-4">Norte del Valle</h4>
+                    <ul class="space-y-2 text-xs text-slate-400">
+                        <li><span>Sede Cartago (Central)</span></li>
+                        <li><span>Enlace Ansermanuevo</span></li>
+                        <li><span>Enlace Alcalá & Ulloa</span></li>
+                        <li><span>Enlace Obando & Zarzal</span></li>
+                        <li><span>Coordinación Valle del Cauca</span></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Legal & Transparencia -->
+                <div>
+                    <h4 class="text-sm font-bold text-phGreen uppercase tracking-wider mb-4">Participación</h4>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-3">
+                        Espacio de participación democrática y comunitaria respetuosa de la Constitución Política de Colombia.
+                    </p>
+                    <a href="#voluntariado" class="inline-block px-4 py-2 rounded-lg bg-slate-800 text-phYellow hover:bg-slate-700 font-bold text-xs">
+                        Inscríbete en el Voluntariado
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Disclaimer -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>© 2026 Pacto Histórico Sede Cartago, Valle del Cauca. Todos los derechos reservados.</p>
+                <div class="flex gap-4">
+                    <a href="#faq" class="hover:text-slate-400">Transparencia</a>
+                    <a href="#contacto" class="hover:text-slate-400">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT / INTERACTIVIDAD -->
+    <script>
+        // Menú Móvil
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Cerrar menú móvil al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Pestañas de Propuestas (Tabs)
+        function switchTab(tabId) {
+            // Ocultar todos los contenidos
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            // Resetear estilo de botones
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.className = "tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-white text-slate-700 hover:bg-slate-200";
+            });
+
+            // Mostrar el seleccionado
+            const selectedContent = document.getElementById('content-' + tabId);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
+
+            // Resaltar el botón activo
+            const activeBtn = document.getElementById('tab-' + tabId);
+            if (activeBtn) {
+                activeBtn.className = "tab-btn px-5 py-3 rounded-xl font-bold text-sm transition-all bg-phPurple text-white shadow-md";
+            }
+        }
+
+        // Filtro de Eventos
+        function filterEvents(category) {
+            const cards = document.querySelectorAll('.event-card');
+            const buttons = document.querySelectorAll('.event-filter-btn');
+
+            buttons.forEach(btn => {
+                btn.className = "event-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200";
+            });
+
+            event.target.className = "event-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-slate-900 text-white";
+
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Accordion FAQ
+        function toggleFaq(id) {
+            const answer = document.getElementById(`faq-answer-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Formulario de Voluntariado
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('volunteer-form');
+            const successMsg = document.getElementById('form-success');
+
+            // Simulación de envío exitoso
+            form.classList.add('hidden');
+            successMsg.classList.remove('hidden');
+        }
+
+        function resetForm() {
+            const form = document.getElementById('volunteer-form');
+            const successMsg = document.getElementById('form-success');
+
+            form.reset();
+            form.classList.remove('hidden');
+            successMsg.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
