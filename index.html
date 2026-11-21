@@ -5,38 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacto Histórico - Sede Cartago, Valle del Cauca</title>
 
-    <!-- 1. Motor de Tailwind CSS v3 (Carga todas las clases modernas sin restricciones de GitHub) -->
-    <script src="https://tailwindcss.com"></script>
+    <!-- 1. Hoja de Estilos CSS Compilada de Tailwind (Cero bloqueos de ejecución en servidores) -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     
     <!-- 2. Recursos de Fuentes e Íconos -->
     <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="https://cloudflare.com">
 
-    <!-- 3. Configuración Interactiva de Colores para el Motor de Tailwind -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        phDark: '#1F1E2E',
-                        phPink: '#E83E8C',
-                        phYellow: '#F3B229',
-                        phPurple: '#7B2CBF',
-                        phBlue: '#0077B6',
-                        phGreen: '#2A9D8F'
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- 4. Estilos Manuales y Clases Especiales Unificadas -->
+    <!-- 3. Inyección Manual de Estilos e Identidad Visual del Pacto Histórico -->
     <style>
         body {
             font-family: 'Inter', sans-serif !important;
         }
 
-        /* Degradados Institucionales Oficiales */
+        /* Degradados Corporativos Oficiales */
         .gradient-ph {
             background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 40%, #F3B229 100%) !important;
         }
@@ -57,9 +39,23 @@
             backdrop-filter: blur(10px) !important;
             -webkit-backdrop-filter: blur(10px) !important;
         }
+
+        /* Mapeo y Soporte para los Colores Personalizados en el HTML */
+        .bg-phDark { background-color: #1F1E2E !important; }
+        .bg-phPink { background-color: #E83E8C !important; }
+        .bg-phYellow { background-color: #F3B229 !important; }
+        .bg-phPurple { background-color: #7B2CBF !important; }
+        .bg-phBlue { background-color: #0077B6 !important; }
+        
+        .text-phYellow { color: #F3B229 !important; }
+        .text-phPink { color: #E83E8C !important; }
+        .text-phPurple { color: #7B2CBF !important; }
+        .text-phBlue { color: #0077B6 !important; }
+        .text-phGreen { color: #2A9D8F !important; }
+        
+        .border-phPurple { border-color: #7B2CBF !important; }
     </style>
 </head>
-
 <body class="font-sans bg-slate-50 text-slate-800 antialiased">
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all border-b border-slate-100">
         <div class="h-1.5 w-full gradient-ph"></div>
