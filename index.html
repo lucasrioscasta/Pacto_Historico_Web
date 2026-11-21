@@ -5,48 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacto Histórico - Sede Cartago, Valle del Cauca</title>
 
-    <!-- Tailwind CSS Estable de Producción -->
-    <link rel="stylesheet" href="https://jsdelivr.net">
+    <!-- 1. Estilos Base de Tailwind CSS (Versión de Producción Segura) -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     
-    <!-- Google Fonts & FontAwesome -->
+    <!-- 2. Tipografía e Íconos -->
     <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="https://cloudflare.com">
 
+    <!-- 3. Estilos Personalizados e Inyección de Colores del Pacto Histórico -->
     <style>
-        /* Tipografía Base */
         body {
             font-family: 'Inter', sans-serif;
         }
 
-        /* Degradados Institucionales */
+        /* Degradados Oficiales de la Sede */
         .gradient-ph {
-            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 40%, #F3B229 100%);
+            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 40%, #F3B229 100%) !important;
         }
+        
         .gradient-ph-text {
-            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 50%, #0077B6 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            background: linear-gradient(135deg, #7B2CBF 0%, #E83E8C 50%, #0077B6 100%) !important;
+            -webkit-background-clip: text !important;
+            background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
         }
+
         .ph-border-multicolor {
-            border-image: linear-gradient(to right, #7B2CBF, #E83E8C, #F3B229, #2A9D8F) 1;
+            border-image: linear-gradient(to right, #7B2CBF, #E83E8C, #F3B229, #2A9D8F) 1 !important;
         }
 
-        /* Efecto Translúcido (Glassmorphism) */
         .glass-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px) !important;
+            -webkit-backdrop-filter: blur(10px) !important;
         }
 
-        /* Clases de Colores Personalizados para Tailwind v2 */
-        .bg-phDark { background-color: #1F1E2E; }
-        .text-phYellow { color: #F3B229; }
-        .text-phPink { color: #E83E8C; }
-        .text-phPurple { color: #7B2CBF; }
-        .text-phBlue { color: #0077B6; }
-        .text-phGreen { color: #2A9D8F; }
-        .border-phPurple { border-color: #7B2CBF; }
+        /* Clases de Respaldo para los Colores que el anterior desarrollador inventó */
+        .bg-phDark { background-color: #1F1E2E !important; }
+        .bg-phPink { background-color: #E83E8C !important; }
+        .bg-phYellow { background-color: #F3B229 !important; }
+        .bg-phPurple { background-color: #7B2CBF !important; }
+        .bg-phBlue { background-color: #0077B6 !important; }
+        
+        .text-phYellow { color: #F3B229 !important; }
+        .text-phPink { color: #E83E8C !important; }
+        .text-phPurple { color: #7B2CBF !important; }
+        .text-phBlue { color: #0077B6 !important; }
+        .text-phGreen { color: #2A9D8F !important; }
+        
+        .border-phPurple { border-color: #7B2CBF !important; }
     </style>
 </head>
 <body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-phPink selection:text-white">
