@@ -1,0 +1,24 @@
+{
+  "name": "pacto_historico_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "dev": "npx tailwindcss@3.4.15 -i ./src/tailwind.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasrioscasta/Pacto_Historico_Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasrioscasta/Pacto_Historico_Web/issues"
+  },
+  "homepage": "https://github.com/lucasrioscasta/Pacto_Historico_Web#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.3.5"
+  }
+}
